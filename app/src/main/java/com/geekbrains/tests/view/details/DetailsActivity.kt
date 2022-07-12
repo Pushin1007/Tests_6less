@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.geekbrains.TOTAL_COUNT_EXTRA
 import com.geekbrains.tests.R
 import com.geekbrains.tests.presenter.details.DetailsPresenter
 import com.geekbrains.tests.presenter.details.PresenterDetailsContract
@@ -39,7 +40,7 @@ class DetailsActivity : AppCompatActivity(), ViewDetailsContract {
 
     companion object {
 
-        const val TOTAL_COUNT_EXTRA = "TOTAL_COUNT_EXTRA"
+
 
         fun getIntent(context: Context, totalCount: Int): Intent {
             return Intent(context, DetailsActivity::class.java).apply {
